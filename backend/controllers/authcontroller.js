@@ -39,7 +39,12 @@ const Login =  async(req, res) => {
             })
         }
         const {password, ...others} = user._doc;//password bade bakisob show korbe
-        res.status(400).json({others})
+        res.status(400).json({
+            others,
+            msg: "Login Successful",
+            token: await user.generateToken(),
+            userId: user._id.toString()
+        })
     }catch(error){
         res.status(400).json({
             message: "User Already Exists"
