@@ -1,0 +1,23 @@
+.home{
+    width: 100%;
+    height: 100vh;
+}
+.container p{
+    font-size: 25px;
+    color: rgb(21 119 149);
+}
+.container h1{
+    color: rgb(17, 97, 121);
+}
+.home-btn{
+    background-color: rgb(21 119 149);
+    border-radius: 5px;
+    color: white !important; /* Using !important gives your rule the highest specificity, so it overrides other rules, regardless of their specificity. */
+    font-weight: bold;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+}

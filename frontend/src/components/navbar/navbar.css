@@ -1,0 +1,19 @@
+.user-img{
+    width: 40px;
+    height: 40px
+}
+.navbar-brand{
+    color: rgb(21 119 149);
+    font-size: 40px;
+    font-weight: bold;
+}
+.btn-nav{
+    background-color: rgb(21 119 149);
+    border-radius: 10px;
+    color: white !important; /* Using !important gives your rule the highest specificity, so it overrides other rules, regardless of their specificity. */
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-link{
+    font-size: 20px;
+}
