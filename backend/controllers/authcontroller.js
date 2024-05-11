@@ -8,10 +8,11 @@ const Register = async(req, res) => {
         const user = new User({
             email, username, password: hashpassword
         })
-        await user.save().then(() => {
-            res.status(200).json({
-                user: user
-            })
+        await user.save()
+        res.status(200).json({
+            user: user,
+            token: await user.generateToken(),
+            userId: user._id.toString()
         })
     }catch(error){
         res.status(400).json({
